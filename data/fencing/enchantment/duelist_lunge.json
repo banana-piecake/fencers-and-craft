@@ -1,5 +1,5 @@
 {
-  "description": "Lunge Test",
+  "description": "Lunge",
   "supported_items": "#minecraft:swords",
   "weight": 1,
   "max_level": 1,
@@ -19,18 +19,32 @@
     "minecraft:post_piercing_attack": [
       {
         "requirements": {
-          "type": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "minecraft:type_specific/player": {
-              "input": {
-                "forward": true,
-                "backward": false
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "duelist_lunge_cooldown": {
+                  "max": 0
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": true,
+                    "backward": false
+                  }
+                }
               }
             }
-          }
+          ]
         },
-        "effect": {
+          "effect": {
           "type": "minecraft:run_function",
           "function": "fencing:duelist/attacks/lunge_use"
         }

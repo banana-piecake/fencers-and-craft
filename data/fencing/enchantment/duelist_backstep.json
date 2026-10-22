@@ -1,5 +1,5 @@
 {
-  "description": "Backstep Test",
+  "description": "Backstep",
   "supported_items": "#minecraft:swords",
   "weight": 1,
   "max_level": 1,
@@ -19,16 +19,30 @@
     "minecraft:post_piercing_attack": [
       {
         "requirements": {
-          "type": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "minecraft:type_specific/player": {
-              "input": {
-                "forward": false,
-                "backward": true
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "duelist_backstep_cooldown": {
+                  "max": 0
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": false,
+                    "backward": true
+                  }
+                }
               }
             }
-          }
+          ]
         },
         "effect": {
           "type": "minecraft:run_function",

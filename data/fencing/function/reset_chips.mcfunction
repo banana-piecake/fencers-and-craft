@@ -16,6 +16,10 @@ scoreboard players set @s stun_timer 10
 scoreboard players set @s iframe_timer 10
 
 scoreboard players set @s fencing_dash_input_cooldown 0
+execute unless score @s duelist_jab_cooldown matches 0.. run scoreboard players set @s duelist_jab_cooldown 0
+execute unless score @s duelist_lunge_cooldown matches 0.. run scoreboard players set @s duelist_lunge_cooldown 0
+execute unless score @s duelist_backstep_cooldown matches 0.. run scoreboard players set @s duelist_backstep_cooldown 0
+
 
 
 title @s times 0 0 0
