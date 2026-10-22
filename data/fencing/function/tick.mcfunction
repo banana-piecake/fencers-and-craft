@@ -48,4 +48,8 @@ scoreboard players remove @e[scores={fencing_left_dash_active=1..}] fencing_left
 scoreboard players remove @e[scores={fencing_back_dash_active=1..}] fencing_back_dash_active 1
 scoreboard players remove @e[scores={fencing_dash_input_cooldown=1..}] fencing_dash_input_cooldown 1
 
+execute as @a[tag=fencer] run execute unless score @s agility_chips matches 2.. unless score @s fencing_dash_cooldown matches 40.. run scoreboard players add @s fencing_dash_cooldown 1
+execute as @a[tag=fencer] run execute if score @s agility_chips matches 2.. unless score @s fencing_dash_cooldown matches 80.. run scoreboard players add @s fencing_dash_cooldown 1
+execute as @a[tag=fencer] run execute unless score @s agility_chips matches 2.. if score @s fencing_dash_cooldown matches 40.. run scoreboard players set @s fencing_dash_cooldown 40
+
 
