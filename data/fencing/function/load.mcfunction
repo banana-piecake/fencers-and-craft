@@ -25,6 +25,9 @@ scoreboard objectives add fencing_right_dash_active dummy
 scoreboard objectives add fencing_foward_dash_active dummy
 scoreboard objectives add fencing_left_dash_active dummy
 scoreboard objectives add fencing_back_dash_active dummy
+scoreboard objectives add fencing_dash_cooldown dummy
+scoreboard objectives add fencing_dash_input_cooldown dummy
+
 
 #chips left etc
 scoreboard objectives add chips_left dummy

@@ -46,4 +46,6 @@ scoreboard players remove @e[scores={fencing_right_dash_active=1..}] fencing_rig
 scoreboard players remove @e[scores={fencing_foward_dash_active=1..}] fencing_foward_dash_active 1
 scoreboard players remove @e[scores={fencing_left_dash_active=1..}] fencing_left_dash_active 1
 scoreboard players remove @e[scores={fencing_back_dash_active=1..}] fencing_back_dash_active 1
+scoreboard players remove @e[scores={fencing_dash_input_cooldown=1..}] fencing_dash_input_cooldown 1
+
 
