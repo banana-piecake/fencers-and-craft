@@ -1,0 +1,1 @@
+scoreboard players set @s chip_4 0

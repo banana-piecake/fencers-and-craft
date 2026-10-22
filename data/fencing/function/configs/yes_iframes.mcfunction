@@ -1,0 +1,1 @@
+scoreboard players set #CONFIG no_iframes 0

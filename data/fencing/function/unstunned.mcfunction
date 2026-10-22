@@ -1,0 +1,1 @@
+attribute @s minecraft:movement_speed modifier remove fencing:stun

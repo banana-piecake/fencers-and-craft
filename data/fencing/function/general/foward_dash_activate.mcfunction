@@ -1,0 +1,1 @@
+scoreboard players set @s fencing_foward_dash_active 2

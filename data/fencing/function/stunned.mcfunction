@@ -1,0 +1,1 @@
+attribute @s minecraft:movement_speed modifier add fencing:stun -1 add_multiplied_total
