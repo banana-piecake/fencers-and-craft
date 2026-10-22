@@ -1,0 +1,1 @@
+scoreboard players set @s wager_chip_input_cooldown 2

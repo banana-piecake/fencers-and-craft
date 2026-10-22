@@ -1,0 +1,1 @@
+execute if score @s wager_chip_slot_3 matches 1 run function fencing:agility/agility_wager
