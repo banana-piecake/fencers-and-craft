@@ -1,0 +1,162 @@
+{
+  "description": "Dash",
+  "supported_items": "#minecraft:foot_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "fencing_dash_cooldown": {
+                  "min": 40
+                },
+                "fencing_dash_input_cooldown": {
+                  "max": 0
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "forward": true,
+                    "sprint": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "fencing:general/dashes/foward_dash_activate"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "fencing_dash_cooldown": {
+                  "min": 40
+                },
+                "fencing_dash_input_cooldown": {
+                  "max": 0
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "backward": true,
+                    "sprint": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "fencing:general/dashes/back_dash_activate"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "fencing_dash_cooldown": {
+                  "min": 40
+                },
+                "fencing_dash_input_cooldown": {
+                  "max": 0
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "left": true,
+                    "sprint": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "fencing:general/dashes/left_dash_activate"
+        }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "fencing_dash_cooldown": {
+                  "min": 40
+                },
+                "fencing_dash_input_cooldown": {
+                  "max": 0
+                }
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:type_specific/player": {
+                  "input": {
+                    "right": true,
+                    "sprint": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "fencing:general/dashes/right_dash_activate"
+        }
+      }
+    ]
+  }
+}
