@@ -53,3 +53,8 @@ execute as @a[tag=fencer] run execute if score @s agility_chips matches 2.. unle
 execute as @a[tag=fencer] run execute unless score @s agility_chips matches 2.. if score @s fencing_dash_cooldown matches 40.. run scoreboard players set @s fencing_dash_cooldown 40
 
 
+#misc
+scoreboard players remove @e[scores={fencing_invincibility_timer=1..}] fencing_invincibility_timer 1
+
+
+

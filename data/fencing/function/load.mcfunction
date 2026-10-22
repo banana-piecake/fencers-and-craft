@@ -13,6 +13,7 @@ gamerule spawn_wardens false
 scoreboard objectives add stagger_timer dummy
 scoreboard objectives add iframe_timer dummy
 scoreboard objectives add stun_timer dummy
+scoreboard objectives add fencing_invincibility_timer dummy
 
 #attack timers
 scoreboard objectives add duelist_jab_timer dummy
