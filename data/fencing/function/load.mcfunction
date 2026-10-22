@@ -39,6 +39,7 @@ scoreboard objectives add chips_left dummy
 scoreboard objectives add chips_wagered dummy
 
 
+
 #chips on bar // what they are // what kind wagered // 0=dead 1=normal 2=decay 3=agility 4=precision
 scoreboard objectives add chip_1 dummy
 scoreboard objectives add chip_2 dummy
@@ -59,6 +60,13 @@ scoreboard objectives add wagerable_chip_5 dummy
 scoreboard objectives add agility_chips dummy
 scoreboard objectives add precision_chips dummy
 scoreboard objectives add decay_chips dummy
+
+#chip wager options // so you can choose ofc // 1 = agility
+scoreboard objectives add wager_chip_slot_1 dummy
+scoreboard objectives add wager_chip_slot_2 dummy
+scoreboard objectives add wager_chip_slot_3 dummy
+scoreboard objectives add wager_chip_slot_4 dummy
+scoreboard objectives add wager_chip_input_cooldown dummy
 
 
 #dummys etc...
