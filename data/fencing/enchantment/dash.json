@@ -156,6 +156,23 @@
           "type": "minecraft:run_function",
           "function": "fencing:general/dashes/right_dash_activate"
         }
+      },
+      {
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "input": {
+                "sprint": true
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "fencing:general/dashes/hold_control"
+        }
       }
     ]
   }

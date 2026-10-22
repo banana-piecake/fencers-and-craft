@@ -1,0 +1,1 @@
+scoreboard players set @s fencing_dash_input_cooldown 2
