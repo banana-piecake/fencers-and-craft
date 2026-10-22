@@ -20,6 +20,9 @@ scoreboard objectives add duelist_jab_timer dummy
 scoreboard objectives add duelist_lunge_timer dummy
 scoreboard objectives add duelist_lunge_active dummy
 scoreboard objectives add duelist_backstep_timer dummy
+scoreboard objectives add duelist_lunge_cooldown dummy
+scoreboard objectives add duelist_backstep_cooldown dummy
+
 
 #dashes etc
 scoreboard objectives add fencing_right_dash_active dummy
