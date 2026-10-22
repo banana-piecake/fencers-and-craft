@@ -15,5 +15,7 @@ scoreboard players set @s stagger_timer 10
 scoreboard players set @s stun_timer 10
 scoreboard players set @s iframe_timer 10
 
+scoreboard players set @s fencing_dash_input_cooldown 0
+
 
 title @s times 0 0 0
