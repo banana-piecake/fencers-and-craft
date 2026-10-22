@@ -54,7 +54,7 @@ execute as @a[tag=fencer] run execute unless score @s agility_chips matches 2.. 
 
 
 #misc
-scoreboard players remove @e[scores={fencing_invincibility_timer=1..}] fencing_invincibility_timer 1
+scoreboard players remove @e[scores={fencing_invisibility_timer=1..}] fencing_invisibility_timer 1
 
 
 
