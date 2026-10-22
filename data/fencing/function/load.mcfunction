@@ -78,3 +78,4 @@ scoreboard objectives add hitbox_timer dummy
 scoreboard objectives add no_stagger dummy
 scoreboard objectives add no_stun dummy
 scoreboard objectives add no_iframes dummy
+scoreboard objectives add no_cooldowns dummy

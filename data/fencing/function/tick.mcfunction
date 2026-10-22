@@ -61,5 +61,11 @@ execute as @a[tag=fencer] run execute unless score @s agility_chips matches 2.. 
 scoreboard players remove @e[scores={fencing_invisibility_timer=1..}] fencing_invisibility_timer 1
 scoreboard players remove @e[scores={wager_chip_input_cooldown=1..}] wager_chip_input_cooldown 1
 
+execute if score #CONFIG no_cooldowns matches 1 run scoreboard players set @a duelist_jab_cooldown 0
+execute if score #CONFIG no_cooldowns matches 1 run scoreboard players set @a duelist_lunge_cooldown 0
+execute if score #CONFIG no_cooldowns matches 1 run scoreboard players set @a duelist_backstep_cooldown 0
+execute if score #CONFIG no_cooldowns matches 1 run scoreboard players set @a fencing_dash_cooldown 80
+
+
 
 
