@@ -40,6 +40,7 @@ scoreboard players set @e[scores={duelist_lunge_active=..0}] duelist_lunge_activ
 execute as @e[tag=duelist_backstep] at @e[tag=duelist_backstep] run function fencing:duelist/attacks/backstep_primary
 scoreboard players add @e[tag=duelist_backstep] duelist_backstep_timer 1
 
+scoreboard players remove @e[scores={duelist_jab_cooldown=1..}] duelist_jab_cooldown 1
 scoreboard players remove @e[scores={duelist_lunge_cooldown=1..}] duelist_lunge_cooldown 1
 scoreboard players remove @e[scores={duelist_backstep_cooldown=1..}] duelist_backstep_cooldown 1
 
