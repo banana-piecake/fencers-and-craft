@@ -1,0 +1,1 @@
+give @s iron_sword[enchantments={"fencing:duelist_jab":1,"fencing:duelist_lunge":1,"fencing:duelist_backstep":1},piercing_weapon={},item_name="Duelist's Sabre",unbreakable={},attack_range={min_reach:0.0,max_reach:0,min_creative_reach:0.0,max_creative_reach:0,hitbox_margin:0},attack_animation={duration:9,type:"stab"}] 1

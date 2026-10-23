@@ -68,6 +68,8 @@ scoreboard objectives add wager_chip_slot_3 dummy
 scoreboard objectives add wager_chip_slot_4 dummy
 scoreboard objectives add wager_chip_input_cooldown dummy
 
+#styles // 1 = duelist
+scoreboard objectives add fencer_selected dummy
 
 #dummys etc...
 scoreboard objectives add jab_dummy_timer dummy
