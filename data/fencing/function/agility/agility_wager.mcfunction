@@ -1,3 +1,5 @@
+execute at @s unless score @s chips_wagered = @s chips_left run playsound minecraft:block.copper.hit master @a ~ ~ ~ 1.4 0.6
+
 execute if score @s chips_wagered matches 4 if score @s chips_left matches 5 run function fencing:agility/wager_chip_1
 
 execute if score @s chips_wagered matches 3 if score @s chips_left matches 4 run function fencing:agility/wager_chip_1
@@ -17,3 +19,4 @@ execute if score @s chips_wagered matches 0 if score @s chips_left matches 2 run
 execute if score @s chips_wagered matches 0 if score @s chips_left matches 3 run function fencing:agility/wager_chip_3
 execute if score @s chips_wagered matches 0 if score @s chips_left matches 4 run function fencing:agility/wager_chip_4
 execute if score @s chips_wagered matches 0 if score @s chips_left matches 5 run function fencing:agility/wager_chip_5
+
