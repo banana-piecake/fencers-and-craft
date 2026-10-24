@@ -1,0 +1,1 @@
+execute unless score @s stagger_timer matches 1.. run scoreboard players set @s fencing_blocking_timer 2
