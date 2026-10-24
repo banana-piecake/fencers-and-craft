@@ -76,6 +76,10 @@ scoreboard objectives add jab_dummy_timer dummy
 scoreboard objectives add visual_hitbox_timer dummy
 scoreboard objectives add hitbox_timer dummy
 
+#other abilities
+scoreboard objectives add fencing_blocking_timer dummy
+
+
 #configs
 scoreboard objectives add no_stagger dummy
 scoreboard objectives add no_stun dummy
