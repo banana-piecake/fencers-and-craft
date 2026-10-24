@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "block": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "fencing": "block"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "fencing:general/blocking/blocking_use"
+  }
+}

@@ -1,7 +1,7 @@
-execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1..if score @s chips_wagered matches 1.. run scoreboard players remove @s chips_wagered 1
-execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1..run scoreboard players remove @s chips_left 1
-execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1..run scoreboard players set @s agility_chips 0
-execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1..run playsound minecraft:entity.player.attack.crit master @a[distance=0..8] ~ ~1 ~ 1 1.4
-execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1..if score @s chips_wagered matches 1.. run function fencing:damage_take/take_damage_normal
-execute if score @s fencing_blocking_timer matches 1.. run function fencing:general/blocking/blocking_hit
+execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1.. if score @s chips_wagered matches 1.. run scoreboard players remove @s chips_wagered 1
+execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1.. run scoreboard players remove @s chips_left 1
+execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1.. run scoreboard players set @s agility_chips 0
+execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1.. run playsound minecraft:entity.player.attack.crit master @a[distance=0..8] ~ ~1 ~ 1 1.4
+execute if score @s iframe_timer matches ..0 unless score @s fencing_blocking_timer matches 1.. if score @s chips_wagered matches 1.. run function fencing:damage_take/take_damage_normal
+execute if score @s iframe_timer matches ..0 if score @s fencing_blocking_timer matches 1.. run function fencing:general/blocking/blocking_hit
 function fencing:damage_take/redo_chips
